@@ -3,6 +3,7 @@ import { Input } from "@/components/Input";
 import { ProductCard } from "@/components/ProductCard";
 import {
     describeProduct,
+    MOCK_STORES,
     PAYMENT_LABELS,
     Product,
     RESERVATION_MINUTES,
@@ -21,6 +22,10 @@ import {
     View,
 } from "react-native";
 
+// Le dice a la web qué páginas de tienda generar: /tiendas/s1, /tiendas/s2, /tiendas/s3
+export async function generateStaticParams() {
+  return MOCK_STORES.map((s) => ({ id: s.id }));
+}
 export default function StoreCatalogScreen() {
   const c = useTheme();
   const { id } = useLocalSearchParams<{ id: string }>();
