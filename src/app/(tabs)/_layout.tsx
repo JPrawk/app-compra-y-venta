@@ -18,7 +18,7 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Directo",
+          title: "Productos",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="radio" color={color} size={size} />
           ),

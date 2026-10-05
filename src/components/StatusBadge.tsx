@@ -5,8 +5,8 @@ type Tone = "success" | "warning" | "danger" | "primary" | "muted";
 
 const STATUS: Record<string, { label: string; tone: Tone }> = {
   available: { label: "Disponible", tone: "success" },
-  reserved: { label: "Reservada", tone: "warning" },
-  sold: { label: "Vendida", tone: "muted" },
+  reserved: { label: "Reservado", tone: "warning" },
+  sold: { label: "Vendido", tone: "muted" },
   confirmed: { label: "Venta confirmada", tone: "success" },
   cancelled: { label: "Cancelada", tone: "danger" },
   expired: { label: "Vencida", tone: "muted" },
