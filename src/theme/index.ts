@@ -8,6 +8,8 @@ export const Colors = {
     textMuted: "#64748B",
     border: "#E2E8F0",
     danger: "#DC2626",
+    success: "#16A34A",
+    warning: "#D97706",
   },
   dark: {
     primary: "#3B82F6",
@@ -17,6 +19,8 @@ export const Colors = {
     textMuted: "#94A3B8",
     border: "#334155",
     danger: "#F87171",
+    success: "#4ADE80",
+    warning: "#FBBF24",
   },
 };
 
